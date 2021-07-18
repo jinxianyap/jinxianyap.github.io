@@ -1,0 +1,31 @@
+.socials {
+    height: 2rem;
+    padding: 1rem;
+    background-color: $grey;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    .social-link {
+        display: inline-block;
+        width: fit-content;
+        margin: auto;
+        img {
+            height: 1.5rem;
+            width: auto;
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width: 450px) {
+    .socials {
+        height: 1.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+
+        img {
+            height: 1rem;
+        }
+    }
+}

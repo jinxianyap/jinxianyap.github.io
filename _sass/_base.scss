@@ -1,0 +1,83 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    font-weight: 400;
+}
+
+p,
+a {
+    font-size: 1.1rem;
+    font-family: $body-font;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-content {
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 0.3rem;
+    background: lighten($gunmetal, 30%);
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $gunmetal;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: lighten($gunmetal, 10%);
+}
+
+@media screen and (max-width: 1500px) {
+    .container-content {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container-content {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container-content {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-content {
+        width: 95vw;
+    }
+}
+
+// mobile
+@media screen and (max-width: 450px) {
+    html, body, .container-content {
+        height: fit-content;
+    }
+    .container-content {
+        display: block;
+    }
+}

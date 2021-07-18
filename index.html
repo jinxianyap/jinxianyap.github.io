@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+type: Home
+header: none
+footer: normal
+---
+
+<div class="home-wrapper">
+    <div class="home">
+        <div class="profile-section">
+            <img id="profile-img" src="./assets/profile-pic.jpg" alt="profile-picture" />
+            {% include socials.html %}
+        </div>
+        <div class="text-section">
+            <div class="text-content">
+                {% capture description %}{% include content/description.md %}{% endcapture %}
+                {{ description | markdownify }}
+            </div>
+        </div>
+    </div>
+</div>
